@@ -11,9 +11,6 @@ export default class NavbarComp extends Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="#aboutUs">About us</Nav.Link>
-                                <Nav.Link href="#skills">Skills</Nav.Link>
                                 <NavDropdown title="Games" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="#action/3.1">Tic-Tac-Toe</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Trivia</NavDropdown.Item>
@@ -21,10 +18,31 @@ export default class NavbarComp extends Component {
                                     <NavDropdown.Item href="#action/3.4">Snake</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.5">Hangman</NavDropdown.Item>
                                 </NavDropdown>
+
+                                <NavDropdown title="Skills" id="basic-nav-dropdown">
+                                    <NavDropdown.Item href="#action/4.1">Logical Thinking</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.2">Spatial Awareness</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.3">Problem Solving</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.4">Math Skills</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.5">English Skills</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.6">Fine Motor Skills</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.7">Strategic Planning</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.8">Collaboration</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/4.8">Creativity (imagination, artistic expression)</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.1">Memory</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.2">Communication</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.3">Attention and Concentration</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.4">Language and Reading</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.5">Time management</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/5.6">Persistence and Resilience</NavDropdown.Item>
+                                </NavDropdown>
+
+                                <Nav.Link href="#aboutUs">About us</Nav.Link>
+                                <Nav.Link href="#home">Home</Nav.Link>
                             </Nav>
-                            <Nav className="ml-auto"> {/* Add ml-auto class here */}
-                                <Button type="submit" className="mx-2">Sign In</Button> {/* Add mx-2 class for spacing */}
-                                <Button type="submit" className="mx-2">Sign Up</Button> {/* Add mx-2 class for spacing */}
+                            <Nav className="ml-auto">
+                                <Button type="submit" className="mx-2">Sign In</Button>
+                                <Button type="submit" className="mx-2">Sign Up</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
