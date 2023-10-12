@@ -6,7 +6,6 @@ import Word from '../components/hangmanComp/comps/Word';
 import Popup from '../components/hangmanComp/comps/Popup';
 import Notification from '../components/hangmanComp/comps/Notification';
 import { showNotification as show } from '../components/hangmanComp/helpers/helpers';
-
 import '../components/hangmanComp/style/Hangman.css';
 
 const words = ['application', 'programming', 'interface', 'wizard'];
