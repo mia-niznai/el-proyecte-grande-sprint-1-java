@@ -34,19 +34,19 @@ function EndGame({ clearHistory, winCount, restartGame, player, draw }) {
             {!draw && <h2 style={winTextStyle}>{player ? "B WON" : "A WON"}</h2>}
             {draw && <h2 style={winTextStyle}>Draw</h2>}
 
-            <Row style={winHistoryStyle}>
-                <Col>A's WINS: {winCount.A}</Col>
-                <Col>B's WINS: {winCount.B}</Col>
+            <Row className={`col-6`} style={winHistoryStyle}>
+                <Col className={`text-center`}>A's WINS: {winCount.A}</Col>
+                <Col className={`text-center`}>B's WINS: {winCount.B}</Col>
             </Row>
 
-            <Row>
+            <Row className={`col-6`}>
                 <Col>
-                    <Button variant="primary" onClick={restartGame}>
+                    <Button className={`form-control`} variant="primary" onClick={restartGame}>
                         Restart Game
                     </Button>
                 </Col>
                 <Col>
-                    <Button variant="danger" onClick={clearHistory}>
+                    <Button className={`form-control`} variant="danger" onClick={clearHistory}>
                         Clear History
                     </Button>
                 </Col>

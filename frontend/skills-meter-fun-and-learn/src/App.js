@@ -41,7 +41,7 @@ const router = createBrowserRouter(
             <Route path="/" element={<RootLayout />}>
                 <Route index element={<Homepage />} />
                 <Route path="games" element={<GamesLayout/>}>
-                    <Route path="tic-tac-toe" element={<TicTacToe />} />
+                    <Route path="tictactoe" element={<TicTacToe />} />
                     <Route path="trivia" element={<Trivia />} />
                     <Route path="typingSpeedTest" element={<TypingSpeedTest />} />
                     <Route path="snake" element={<Snake />} />
