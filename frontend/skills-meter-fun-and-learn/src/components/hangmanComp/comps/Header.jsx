@@ -1,13 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-// rafce
 const Header = () => {
-  return (
-    <>
-      <h1>Hangman</h1>
-      <p>Find the hidden word - Enter a letter</p>
-    </>
-  )
-}
+    const headerStyle = {
+        margin: '20px 0 0',
+    };
 
-export default Header
+    const pStyle = {
+        margin: '0',
+    };
+
+    return (
+        <>
+            <h1 style={headerStyle}>Hangman</h1>
+            <p style={pStyle}>Find the hidden word - Enter a letter</p>
+        </>
+    );
+};
+
+export default Header;

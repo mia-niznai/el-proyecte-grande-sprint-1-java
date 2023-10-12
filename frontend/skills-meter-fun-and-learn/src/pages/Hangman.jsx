@@ -6,7 +6,6 @@ import Word from '../components/hangmanComp/comps/Word';
 import Popup from '../components/hangmanComp/comps/Popup';
 import Notification from '../components/hangmanComp/comps/Notification';
 import { showNotification as show } from '../components/hangmanComp/helpers/helpers';
-import '../components/hangmanComp/style/Hangman.css';
 
 const words = ['application', 'programming', 'interface', 'wizard'];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -54,21 +53,34 @@ const Hangman = () => {
     }
 
     return (
-        <>
+        <div style={{
+            boxSizing: 'border-box',
+            backgroundColor: '#34495e',
+            color: '#fff',
+            fontFamily: 'Arial, Helvetica, sans-serif',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            height: '80vh',
+            margin: 0,
+            overflow: 'hidden'
+        }}>
             <Header />
-            <div className="game-container">
+            <div style={{
+                padding: '20px 30px',
+                position: 'relative',
+                margin: 'auto',
+                height: '350px',
+                width: '450px'
+            }}>
                 <Figure wrongLetters={wrongLetters} />
                 <WrongLetters wrongLetters={wrongLetters} />
                 <Word selectedWord={selectedWord} correctLetters={correctLetters} />
             </div>
             <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain} />
             <Notification showNotification={showNotification} />
-        </>
+        </div>
     );
 }
-export default Hangman
 
-
-
-
-
+export default Hangman;
