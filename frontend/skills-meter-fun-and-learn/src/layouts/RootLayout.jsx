@@ -9,7 +9,7 @@ return (
         <header>
         </header>
         <main id="main">
-            <Outlet/>
+            <Outlet />
         </main>
     </div>
 </>

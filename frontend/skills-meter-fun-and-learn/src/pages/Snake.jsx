@@ -1,6 +1,10 @@
+import {useOutletContext} from "react-router-dom";
+
 const Snake = () => {
+
+
     return(
-        <div></div>
+        <div>ABC</div>
     );
 }
 export default Snake
