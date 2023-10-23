@@ -25,6 +25,7 @@ export default class NavbarComp extends Component {
                                     <NavDropdown.Item href="/games/typingspeedtest">Typing speed test</NavDropdown.Item>
                                     <NavDropdown.Item href="/games/snake">Snake</NavDropdown.Item>
                                     <NavDropdown.Item href="/games/hangman">Hangman</NavDropdown.Item>
+                                    <NavDropdown.Item href="/games/2048">2048</NavDropdown.Item>
                                 </NavDropdown>
 
                                 <NavDropdown title="Skills" id="basic-nav-dropdown">

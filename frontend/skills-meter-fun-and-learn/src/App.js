@@ -32,6 +32,7 @@ import TimeManagement from "./pages/TimeManagement";
 import PersistenceAndResilience from "./pages/PersistenceAndResilience";
 import Snake from "./pages/Snake";
 import Hangman from "./pages/Hangman";
+import The2048Game from "./pages/The2048Game";
 import GamesLayout from "./layouts/GamesLayout";
 import SkillsLayout from "./layouts/SkillsLayout";
 
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
                     <Route path="typingSpeedTest" element={<TypingSpeedTest />} />
                     <Route path="snake" element={<Snake />} />
                     <Route path="hangman" element={<Hangman />} />
+                    <Route path="2048" element={<The2048Game />} />
                 </Route>
                 <Route path="skills" element={<SkillsLayout />}>
                     <Route path="logicalThinking" element={<LogicalThinking />} />
